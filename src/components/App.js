@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react';
-import { type, timer } from '../js/script';
+import { type } from '../js/script';
 import '../css/App.css';
 import Button from './Button';
 import { Context } from '../js/Context';
@@ -14,7 +14,7 @@ function App() {
     if (state.Start) {
       type(state, dispatch);
     }
-  }, [state.best, state.Input]);
+  }, [state.best, state.Input, dispatch, state]);
   return (
     <div className="App">
       <h2 id="heading"> Start Typing......</h2>
