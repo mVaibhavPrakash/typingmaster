@@ -19,7 +19,8 @@ export const hardArray=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "
     return Math.floor(Math.random() * max);
   }
 
-export const start = (dispatch) =>{
+export const start = (state,dispatch) =>{
+    if(!state.Start){
     dispatch({type:'setStart',payload:true})
     timer = setInterval(()=>{
         mili=mili+5;
@@ -30,6 +31,7 @@ export const start = (dispatch) =>{
         dispatch({type:'setSec',payload:sec})
         dispatch({type:'setMili',payload:mili})
     },10)
+}
 }
 
 export const type = (state,dispatch,)=>{

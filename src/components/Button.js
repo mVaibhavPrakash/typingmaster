@@ -7,7 +7,7 @@ const Button = ({id,text}) => {
     const [state,dispatch] = useContext(Context)
   return (
     <button id={id} onClick={e=> text === 'Normal' ? normal(dispatch): text === 'Medium' ? 
-    medium(dispatch): text === 'Hard' ? hard(dispatch) : text==='Reset' ? reset(dispatch):start(dispatch)} 
+    medium(dispatch): text === 'Hard' ? hard(dispatch) : text==='Reset' ? reset(dispatch):start(state,dispatch)} 
     disabled={text==='Start' ? 
     state.Level ? false : true : false}>{text}</button>
   )
