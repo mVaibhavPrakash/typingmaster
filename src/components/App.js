@@ -19,8 +19,9 @@ function App() {
     <div className="App">
       <h2 id="heading"> Start Typing......</h2>
       <p id="about">
-        Typng game to see how fast you type.Timer starts when you click on{' '}
-        <span>Start</span>
+        Typng game to see how fast you type.Timer starts when you select{' '}
+        <span>Level </span>
+        and click on <span>Start</span>
       </p>
       <div id="screen">{state.Character}</div>
       <p id="timer">
