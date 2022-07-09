@@ -25,7 +25,7 @@ function App() {
       </p>
       <div id="screen">{state.Character}</div>
       <p id="timer">
-        Time :{state.Sec}.{state.Mili}s
+        Time : {state.Sec}.{state.Mili}s
       </p>
       <p id="best">My best time : {state.best}s</p>
       <div id="btn-div">

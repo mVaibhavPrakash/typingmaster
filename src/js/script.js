@@ -23,7 +23,7 @@ export const start = (state,dispatch) =>{
     if(!state.Start){
     dispatch({type:'setStart',payload:true})
     timer = setInterval(()=>{
-        mili=mili+5;
+        mili=mili+10;
         if(mili >= 1000){
             sec+=1;
             mili=mili-1000;
@@ -69,8 +69,8 @@ if(state.i===maxloop){
     if(localStorage.getItem('best')){
         if(parseInt(localStorage.getItem('best')) > state.Sec+(state.Mili/1000)){
             dispatch({type:'setChar',payload:'Sucess !!'})
-            localStorage.setItem('best',String(state.Sec+(state.Mili/1000))) 
-            dispatch({type:'setBest',payload:String(state.Sec+(state.Mili/1000))})
+            localStorage.setItem('best',`${state.Sec}.${state.Mili}`) 
+            dispatch({type:'setBest',payload:`${state.Sec}.${state.Mili}`})
         }
         else{
             dispatch({type:'setChar',payload:'Failed !!'})
@@ -78,8 +78,8 @@ if(state.i===maxloop){
     }
     else{
         dispatch({type:'setChar',payload:'Sucess !!'})
-        localStorage.setItem('best',String(state.Sec+(state.Mili/1000)))
-        dispatch({type:'setBest',payload:String(state.Sec+(state.Mili/1000))})
+        localStorage.setItem('best',`${state.Sec}.${state.Mili}`)
+        dispatch({type:'setBest',payload:`${state.Sec}.${state.Mili}`})
     }
 }
 }
