@@ -1,0 +1,57 @@
+
+#btn-div{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  #start-btn, #normal-btn, #medium-btn,#hard-btn{
+    width:23%;
+    height:30px;
+    font-size: 15px;
+    color:black;
+    color: white;
+  }
+  
+  #start-btn{
+    background-color: rgb(14, 174, 14);
+  }
+  
+  #normal-btn{
+    background-color: yellow;
+    color: black;
+  }
+  
+  #medium-btn{
+    background-color: orange;
+    color: black;
+  }
+  
+  #hard-btn{
+    background-color: orangered;
+  }
+  
+  
+  #input{
+    width: 60%;
+    display: inline-block;
+    margin-left: 5%;
+    height:30px;
+    padding: 5px;
+    color:black;
+    font-size: 15px;
+    background-color: white;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  
+  #reset-btn{
+    padding: 5px;
+    display: inline-block;
+    width:20%;
+    margin-left: 9%;
+    height:40px;
+    color: white;
+    background-color: red;
+  }

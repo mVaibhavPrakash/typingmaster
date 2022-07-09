@@ -1,0 +1,86 @@
+.App {
+  width:80vw;
+  margin: 0 auto;
+  background-color: rgb(6, 6, 98);
+  color:white;
+  height: 100vh;
+}
+
+#select{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#select select{
+  margin-left:5%;
+  width: 20%;
+  height: 30px;
+}
+
+#heading{
+  padding: 0.5rem;
+  padding-top:60px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#about{
+  width:95%;
+  word-wrap: break-word;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#screen{
+  width:90%;
+  word-wrap: break-word;
+  text-align: center;
+  text-overflow: ellipsis;
+  line-height: 30vh;
+  margin: 0 auto;
+  margin-top: 50px;
+  height:30vh;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  color: rgb(14, 174, 14);
+}
+
+#timer{
+  margin-top:50px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#best{
+  word-wrap: break-word;
+  padding:0 0.5rem 0.5rem 0.5rem;
+  text-align: center;
+
+}
+  
+span{
+  color: rgb(14, 174, 14);
+}
+
+@media screen and (max-width: 720px) {
+  .App{
+    width:95vw;
+  }
+  #select{
+    font-size: 1.2rem;
+  }
+  #screen{
+    width: 90%;
+    height:20vh;
+    font-size: 1.6rem;
+  }
+  #select select{
+    margin-left:5%;
+    width: 30%;
+  }
+}
