@@ -14,7 +14,7 @@ function App() {
     if (state.Start) {
       type(state, dispatch);
     }
-  }, [state.best, state.Input, dispatch, state]);
+  }, [state.best, state.Input]);
   return (
     <div className="App">
       <h2 id="heading"> Start Typing......</h2>
