@@ -36,7 +36,6 @@ export const type = (state,dispatch,)=>{
     if(state.Level !== 'medium'){
         maxloop=19;
     const char= state.Input.charAt(state.Input.length-1);
-    console.log(state.Character,char)
     if(state.Character === char){
         let x=state.i+1;
         dispatch({type:'setI',payload:x})
@@ -99,6 +98,8 @@ export const reset = (dispatch) =>{
 
 export const medium = (dispatch) =>{
     clearInterval(timer);
+    mili=0;
+    sec=0;
     dispatch({type:'setChar',payload:mediumArray[getRandomInt(10)]})
     dispatch({type:'setStart',payload:false})
     dispatch({type:'setLevel',payload:'medium'})
@@ -109,6 +110,8 @@ export const medium = (dispatch) =>{
 
 export const hard = (dispatch) =>{
     clearInterval(timer);
+    mili=0;
+    sec=0;
     dispatch({type:'setChar',payload:hardArray[getRandomInt(52)]})
     dispatch({type:'setInput',payload:''})
     dispatch({type:'setStart',payload:false})
@@ -119,6 +122,8 @@ export const hard = (dispatch) =>{
 
 export const normal = (dispatch) =>{
     clearInterval(timer);
+    mili=0;
+    sec=0;
     dispatch({type:'setChar',payload:easyArray[getRandomInt(26)]})
     dispatch({type:'setInput',payload:''})
     dispatch({type:'setStart',payload:false})
